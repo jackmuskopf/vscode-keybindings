@@ -1,5 +1,18 @@
 // Place your key bindings in this file to override the defaults
 [
+    
+    // update alt+arrow
+    {
+        "key": "alt+left",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    
     // curor ijkl
     {
         "key": "ctrl+j",
@@ -109,6 +122,28 @@
         "command": "cursorPageDownSelect",
         "when": "textInputFocus"
     },
+    
+    // alt up, down ~ pageup, pagedown
+    {
+        "key": "alt+up",
+        "command": "cursorPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "cursorPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+shift+up",
+        "command": "cursorPageUpSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+shift+down",
+        "command": "cursorPageDownSelect",
+        "when": "textInputFocus"
+    },
 
     // removed keybindings
     {
@@ -125,6 +160,16 @@
         "key": "ctrl+h",
         "command": "-editor.action.startFindReplaceAction",
         "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
     }
 
 ]
