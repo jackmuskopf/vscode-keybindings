@@ -180,12 +180,12 @@
     {
         "key": "ctrl+i",
         "command": "notebook.focusPreviousEditor",
-        "when": "inputFocus && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
+        "when": "notebookEditorFocused && inputFocus && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
       },
       {
         "key": "ctrl+k",
         "command": "notebook.focusNextEditor",
-        "when": "inputFocus && notebookEditorCursorAtBoundary != 'top' && notebookEditorCursorAtBoundary != 'none'"
+        "when": "notebookEditorFocused && inputFocus && notebookEditorCursorAtBoundary != 'top' && notebookEditorCursorAtBoundary != 'none'"
       },
       {
         "key": "ctrl+i",
