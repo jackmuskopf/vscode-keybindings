@@ -1,6 +1,50 @@
 // Place your key bindings in this file to override the defaults
 [   
 
+    {
+        "key": "u",
+        "command": "notebook.cell.expandCellOutput",
+        "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
+    },
+    {
+        "key": "u",
+        "command": "notebook.cell.collapseCellOutput",
+        "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
+    },
+
+    // swtich tabs
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.nextEditor"
+    },
+
+
+    // scrolling
+    {
+        "key": "ctrl+o",
+        "command": "scrollLineDown",
+        "when": "editorFocus || textInputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "scrollLineUp",
+        "when": "editorFocus || textInputFocus"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "list.scrollDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "list.scrollUp",
+        "when": "listFocus && !inputFocus"
+    },
+
     // scroll through autocomplete w/o hitting arrow keys
     {
       "key": "ctrl+n",
