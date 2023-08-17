@@ -1,0 +1,12 @@
+inoremap <C-j> <Left>
+inoremap <C-k> <Down>
+inoremap <C-i> <Up>
+inoremap <C-l> <Right>
+cnoremap <C-j> <Left>
+cnoremap <C-k> <Down>
+cnoremap <C-i> <Up>
+cnoremap <C-l> <Right>
+nnoremap <C-j> <Left>
+nnoremap <C-k> <Down>
+nnoremap <C-i> <Up>
+nnoremap <C-l> <Right>
